@@ -1,7 +1,7 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * main - main function
+ * main - prints the alphabetics
  *
  *Return: always 0
  */
