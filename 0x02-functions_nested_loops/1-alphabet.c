@@ -1,15 +1,15 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - prints the alphabetics
  *
  *Return: always 0
  */
-int main(void)
+void print_alphabet(void)
 {
 char c;
 for (c = 'a' ; c <= 'z' ; c++)
-putchar(c);
-putchar('\n');
+_putchar(c);
+_putchar('\n');
 return (0);
 }
