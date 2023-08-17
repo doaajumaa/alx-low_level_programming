@@ -6,4 +6,5 @@ void print_numbers(void);
 int _isdigit(int c);
 int mul(int a, int b);
 char _putchar(char);
+void print_most_numbers(void);
 #endif
