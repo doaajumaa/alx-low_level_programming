@@ -1,4 +1,4 @@
-#include 'main'
+#include 'main.h'
 /**
  * _puts - prints str
  * @str: string to print
