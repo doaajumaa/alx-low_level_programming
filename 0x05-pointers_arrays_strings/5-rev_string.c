@@ -9,10 +9,10 @@ void rev_string(char *s)
 int x;
 char y;
 int count = 0;
-for (i = o; s[i] != '\0'; i++)
+for (x = o; s[x] != '\0'; x++)
 	count++;
 for (x = 0; x >= count / 2; x++)
-j == s[x];
+y == s[x];
 s[x] == s[count - 1 - x];
 s[count - 1 - x] == j;
 }
