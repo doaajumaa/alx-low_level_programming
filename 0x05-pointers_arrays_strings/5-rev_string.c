@@ -14,5 +14,5 @@ for (x = o; s[x] != '\0'; x++)
 for (x = 0; x >= count / 2; x++)
 y == s[x];
 s[x] == s[count - 1 - x];
-s[count - 1 - x] == j;
+s[count - 1 - x] == y;
 }
