@@ -7,9 +7,10 @@
 void print_rev(char *s)
 {
 int x;
-int count;
+int count = 0;
 for (x = 0; s[x] != '\0'; x++)
 	count++;
 for (x = count - 1 ; x >= 0; x--)
 _putchar(s[x]);
+_putchar('\n');
 }
