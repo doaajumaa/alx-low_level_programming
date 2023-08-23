@@ -13,7 +13,7 @@ int count;
 for (count = 0 ; count < n && *src != '\0' ; count++)
 {
 	dest[length + count] = src[count];
-src++;
+	src++;
 }
 dest[length + count] = '\0';
 return (dest);
