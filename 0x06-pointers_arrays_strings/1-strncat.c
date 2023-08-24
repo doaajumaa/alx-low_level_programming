@@ -8,10 +8,9 @@
 */
 char *_strncat(char *dest, char *src, int n)
 {
-int i;
 int count;
 int length = 0;
-for (i = 0; dest[i] != '\0' ; i++)
+for (count = 0; dest[count] != '\0' ; count++)
 	length++;
 for (count = 0 ; count < n && *src != '\0' ; count++)
 {
