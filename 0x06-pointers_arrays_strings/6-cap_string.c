@@ -1,26 +1,34 @@
 #include "main.h"
 /**
  * cap_string  - turn lowercase to upper case in s after delimiter
- * @s: string of chars
+ * @str: string of chars
  * Return: returns the new string
  */
-char *cap_string(char *s)
+char *cap_string(char *str)
 {
-int i, j;
-char spt[13] = {' ', '\t', '\n'
-	, ',', ';', '.', '!', '?', '"', '(', ')', '{', ')'};
-for (i = 0; s[i] != '\0'; i++)
+int index = 0;
+while (str[index])
 {
-if (i == 0 || s[i] >= 'a' && s[i] <= 'z')
-	s[i] = s[i] - 32;
-for (j = 0; j < 13; j++)
-{
-	if (s[j] == spt[j])
-		if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
-		{
-			s[i + 1] = s[i + 1] - 32;
-		}
+while (!(str[index]  >= 'a' && str[index] <= 'z'))
+	index++;
+if (str[index - 1] == ' ' ||
+str[index - 1] == '\t' ||
+str[index - 1] == '\n' ||
+str[index - 1] == '.' ||
+str[index - 1] == ';' ||
+str[index - 1] == '!' ||
+str[index - 1] == '?' ||
+str[index - 1] == '"' ||
+str[index - 1] == '(' ||
+str[index - 1] == ')' ||
+str[index - 1] == '{' ||
+str[index - 1] == '}' ||
+str[index - 1] == ',' ||
+index == 0)
+str[index] = str[index] - 32;
+index++;
+
+
 }
-}
-return (s);
+return (str);
 }
