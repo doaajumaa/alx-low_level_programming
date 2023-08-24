@@ -15,7 +15,6 @@ for (count = 0; dest[count] != '\0' ; count++)
 for (count = 0 ; count < n && *src != '\0' ; count++)
 {
 	dest[length + count] = src[count];
-	src++;
 }
 dest[length + count] = '\0';
 return (dest);
