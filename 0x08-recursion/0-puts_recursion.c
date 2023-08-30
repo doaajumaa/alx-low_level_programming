@@ -1,4 +1,4 @@
-#includr "main.h"
+#include "main.h"
 /**
  * _puts_recursion - recursivly puts string
  * @s: string to put
