@@ -1,5 +1,14 @@
 #include "main.h"
-void _puts(char *s)
+
+/**
+ * _puts - prints str
+ * @str: string to print
+ * Return:returns void
+ */
+void _puts(char *str)
 {
-s = s + 1;
+int s;
+for (s = 0; str[s] != '\0'; s++)
+_putchar (str[s]);
+_putchar('\n');
 }
