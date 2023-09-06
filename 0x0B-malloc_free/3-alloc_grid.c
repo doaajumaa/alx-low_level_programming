@@ -14,7 +14,7 @@ if (width <= 0 || height <= 0)
 output = malloc(sizeof(int *) * height);
 if (output == NULL)
 	return (NULL);
-for (i = 0; i > height; i++)
+for (i = 0; i < height; i++)
 {
 output = malloc(sizeof(int) * width);
 if (output == NULL)
