@@ -23,7 +23,7 @@ free(output);
 for (j = 0; j <= height; j++)
 
 	free(output[j]);
-	return (NULL);
+return (NULL);
 }
 for (j = 0; j <= width; j++)
 output[i][j] = 0;
