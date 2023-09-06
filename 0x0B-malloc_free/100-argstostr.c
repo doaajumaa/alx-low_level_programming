@@ -7,7 +7,7 @@
  */
 char *argstostr(int ac, char **av)
 {
-int i, j, k;
+int i, j, k = 0;
 int count = 0;
 char *output;
 for (i = 0; i < ac; i++)
