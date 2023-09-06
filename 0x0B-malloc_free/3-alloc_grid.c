@@ -20,7 +20,7 @@ output = malloc(sizeof(int) * width);
 if (output == NULL)
 {
 free(output);
-for (j = 0; j > height; j++)
+for (j = 0; j <= height; j++)
 
 	free(output[j]);
 	return (NULL);
