@@ -25,6 +25,6 @@ if (con == NULL)
 for (i = 0; s1[i] != '\0'; i++)
 	con[i] = s1[i];
 for (i = 0; s2[i] != '\0'; i++)
-	con[s1l + 1] = s2[i];
+	con[s1l + i] = s2[i];
 return (con);
 }
