@@ -16,8 +16,8 @@ if (output == NULL)
 	return (NULL);
 for (i = 0; i < height; i++)
 {
-output = malloc(sizeof(int) * width);
-if (output == NULL)
+output[i] = malloc(sizeof(int) * width);
+if (output[i] == NULL)
 {
 free(output);
 for (j = 0; j <= height; j++)
