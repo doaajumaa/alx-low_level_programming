@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * malloc_checked - j
  * @b: pointer to
@@ -9,7 +10,7 @@ void *malloc_checked(unsigned int b)
 char *m;
 m = malloc(b);
 if (m == NULL)
-	exite(98);
+	exit(98);
 else
-	return (b);
+	return (m);
 }
